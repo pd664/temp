@@ -11,6 +11,8 @@ function GoogleAuth() {
 
 
   async function handleClick() {
+    console.log("clientId", process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID)
+
     await signIn("google");
   }
 

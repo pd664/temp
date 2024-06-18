@@ -1,13 +1,14 @@
 // Import necessary modules
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import APP_CONFIG from '@/config';
 
 // Define authentication options
 export const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: APP_CONFIG.GOOGLE_CLIENT_ID,
+      clientSecret: APP_CONFIG.GOOGLE_CLIENT_SECRET,
     }),
   ],
   callbacks: {

@@ -20,38 +20,15 @@ const nextConfig = {
     reactStrictMode: true,
     env: {
         backendHost: process.env.SS_BACKEND_HOST,
-        NaNEXTAUTH_SECRET:process.env.NEXTAUTH_SECRET,
-        NEXTAUTH_URL:process.env.NEXTAUTH_URL,
+        NEXTAUTH_SECRET:process.env.NEXT_PUBLIC_NEXTAUTH_SECRET,
+        NEXTAUTH_URL:process.env.NEXT_PUBLIC_NEXTAUTH_URL,
 
-        GOOGLE_CLIENT_ID:process.env.GOOGLE_CLIENT_ID,
-        GOOGLE_CLIENT_SECRET:process.env.GOOGLE_CLIENT_SECRET,
+        GOOGLE_CLIENT_ID:process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
+        GOOGLE_CLIENT_SECRET:process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
 
-        REDIRECT_URL_SUCCESS:process.env.REDIRECT_URL_SUCCESS,
-        BACKEND_URL:process.env.BACKEND_URL,
+        REDIRECT_URL_SUCCESS:process.env.NEXT_PUBLIC_REDIRECT_URL_SUCCESS,
+        BACKEND_URL:process.env.NEXT_PUBLIC_BACKEND_URL,
     },
 };
 
 export default nextConfig;
-
-
-// const nextConfig = {
-//     reactStrictMode: true,
-//     env: {
-//         NEXTAUTH_SECRET:process.env.NEXTAUTH_SECRET,
-//         NEXTAUTH_URL:process.env.NEXTAUTH_URL,
-
-//         GOOGLE_CLIENT_ID:process.env.GOOGLE_CLIENT_ID,
-//         GOOGLE_CLIENT_SECRET:process.env.GOOGLE_CLIENT_SECRET,
-
-//         REDIRECT_URL_SUCCESS:process.env.REDIRECT_URL_SUCCESS,
-//         BACKEND_URL:process.env.BACKEND_URL,
-//     }
-// };
-
-// export default nextConfig;
-
-
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {};
-
-// export default nextConfig;
